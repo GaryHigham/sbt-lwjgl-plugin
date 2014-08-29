@@ -74,7 +74,7 @@ object Slick2D {
       "Freehep" at "http://java.freehep.org/maven2"
     ),
     libraryDependencies <+= (slick.version) {
-      "org.slick2d" % "slick2d-parent" % _
+      "org.slick2d" % "slick2d-core" % _
     }
   )
 
