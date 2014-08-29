@@ -60,7 +60,7 @@ object Slick2D {
   }
 
   lazy val baseSettings: Seq[Setting[_]] = Seq (
-    slick.version := "274",
+    slick.version := "1.0.1",
 
     slick.patch <<= slickPatchTask,
 
@@ -74,7 +74,7 @@ object Slick2D {
       "Freehep" at "http://java.freehep.org/maven2"
     ),
     libraryDependencies <+= (slick.version) {
-      "slick" % "slick" % _
+      "org/slick2d" % "slick2d-parent" % _
     }
   )
 
