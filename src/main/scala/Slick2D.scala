@@ -60,7 +60,7 @@ object Slick2D {
   }
 
   lazy val baseSettings: Seq[Setting[_]] = Seq (
-    slick.version := "1.0.1",
+    slick.version := "1.0.0",
 
     slick.patch <<= slickPatchTask,
 
